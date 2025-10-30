@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezcla Roll - Delivery de Sushi Fusión</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Mezcla Roll">
+                Mezcla Roll
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#combos">Combos</a></li>
+                <li><a href="#promos">Promociones</a></li>
+                <li><a href="#" id="open-cart-cta" class="cta-button">Ver Pedido (<span id="cart-count-cta">0</span>)</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>La fusión perfecta entre lo crujiente y lo fresco.</h1>
+                <p>Descubre tu combinación ideal. Calidad y sabor directo a tu puerta.</p>
+                <a href="#menu" class="cta-button-large">Ver Menú Completo</a>
+            </div>
+            </section>
+
+        <section class="specialties container">
+            <h2>Las Mezclas Favoritas</h2>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <img src="img/mezcla-crunch.jpg" alt="Rollo Mezcla Crunch">
+                    <div class="card-content">
+                        <h3>Mezcla Crunch</h3>
+                        <p>Salmón, Queso Crema & Palta, coronado con salsa de anguila.</p>
+                        <a href="#menu" class="add-to-cart-button">Ver más</a>
+                    </div>
+                </div>
+                <div class="specialty-card">
+                    <img src="img/tokyo-sunset.jpg" alt="Rollo Tokyo Sunset">
+                    <div class="card-content">
+                        <h3>Tokyo Sunset</h3>
+                        <p>Salmón fresco, Palta & Cream Cheese, cubierto de salmón.</p>
+                        <a href="#menu" class="add-to-cart-button">Ver más</a>
+                    </div>
+                </div>
+                <div class="specialty-card">
+                    <img src="img/volcano-roll.jpg" alt="Rollo Volcano Roll">
+                    <div class="card-content">
+                        <h3>Volcano Roll</h3>
+                        <p>Langostino tempura y queso crema, con salsa spicy mayo.</p>
+                        <a href="#menu" class="add-to-cart-button">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Nuestro Menú</h2>
+                
+                <h3>Crispy Rolls: La Mezcla Crujiente</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="img/mezcla-crunch-menu.jpg" alt="Mezcla Crunch">
+                        <div class="menu-item-info">
+                            <h4>Mezcla Crunch (8 pz)</h4>
+                            <p>Salmón, Queso Crema & Palta. Coronado con salsa de anguila y sésamo.</p>
+                            <span class="price">$160.00</span>
+                            <button class="add-to-cart-button" data-name="Mezcla Crunch (8 pz)" data-price="160.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/volcano-roll-menu.jpg" alt="Volcano Roll">
+                        <div class="menu-item-info">
+                            <h4>Volcano Roll (8 pz)</h4>
+                            <p>Salmón, Langostino Tempura & Queso Crema. Coronado con salsa spicy mayo.</p>
+                            <span class="price">$160.00</span>
+                            <button class="add-to-cart-button" data-name="Volcano Roll (8 pz)" data-price="160.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/katsu-roll-menu.jpg" alt="Chicken Katsu Roll">
+                        <div class="menu-item-info">
+                            <h4>Chicken Katsu Roll (8 pz)</h4>
+                            <p>Crujiente Pollo Katsu, Cream Cheese & Palta. Coronado con salsa teriyaki.</p>
+                            <span class="price">$160.00</span>
+                            <button class="add-to-cart-button" data-name="Chicken Katsu Roll (8 pz)" data-price="160.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fresh-rolls-title">Fresh Rolls: La Mezcla Fresca</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="img/tokyo-sunset-menu.jpg" alt="Tokyo Sunset">
+                        <div class="menu-item-info">
+                            <h4>Tokyo Sunset (8 pz)</h4>
+                            <p>Salmón fresco, Palta & Cream Cheese. Cubierto con finas láminas de salmón.</p>
+                            <span class="price">$150.00</span>
+                            <button class="add-to-cart-button" data-name="Tokyo Sunset (8 pz)" data-price="150.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/dragonfly-roll-menu.jpg" alt="Dragonfly Roll">
+                        <div class="menu-item-info">
+                            <h4>Dragonfly Roll (8 pz)</h4>
+                            <p>Atún Rojo, Pepino & Mayo Japonesa. Cubierto con láminas de palta y unagi.</p>
+                            <span class="price">$150.00</span>
+                            <button class="add-to-cart-button" data-name="Dragonfly Roll (8 pz)" data-price="150.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/tropical-tuna-menu.jpg" alt="Tropical Tuna">
+                        <div class="menu-item-info">
+                            <h4>Tropical Tuna (8 pz)</h4>
+                            <p>Atún Rojo, Mango & Palta. Coronado con sésamo negro y aderezo cítrico.</p>
+
+                            <span class="price">$150.00</span>
+                            <button class="add-to-cart-button" data-name="Tropical Tuna (8 pz)" data-price="150.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fresh-rolls-title">Dips y Extras</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="img/dip-anguila.jpg" alt="Salsa de Anguila">
+                        <div class="menu-item-info">
+                            <h4>Salsa de Anguila</h4>
+                            <p>Nuestra salsa de anguila dulce especial (60 ml).</p>
+                            <span class="price">$20.00</span>
+                            <button class="add-to-cart-button" data-name="Dip Anguila (60 ml)" data-price="20.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/dip-chipotle.jpg" alt="Dip Chipotle">
+                        <div class="menu-item-info">
+                            <h4>Dip Chipotle Cremoso</h4>
+                            <p>Mayonesa spicy de chipotle (60 ml).</p>
+                            <span class="price">$20.00</span>
+                            <button class="add-to-cart-button" data-name="Dip Chipotle (60 ml)" data-price="20.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/dip-soya.jpg" alt="Salsa de Soya">
+                        <div class="menu-item-info">
+                            <h4>Salsa de Soya</h4>
+                            <p>Salsa de soya clásica (60 ml).</p>
+                            <span class="price">$10.00</span>
+                            <button class="add-to-cart-button" data-name="Salsa de Soya (60 ml)" data-price="10.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/dip-tocino.jpg" alt="Tocino Triturado">
+                        <div class="menu-item-info">
+                            <h4>Tocino Triturado</h4>
+                            <p>Extra de tocino crujiente triturado (30 g).</p>
+                            <span class="price">$25.00</span>
+                            <button class="add-to-cart-button" data-name="Tocino Triturado (30 g)" data-price="25.00">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="promos" class="promos-section">
+            <div class="container">
+                <h2>Martes de Mezclas</h2>
+                <p>¡No te lo pierdas! Todos los martes, 3x2 en nuestros "Crispy Rolls" seleccionados.</p>
+                <a href="#menu" class="cta-button-large">Ver Promoción</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Mezcla Roll</div>
+                <div class="footer-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Mezcla Roll. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal-overlay">
+        <div id="cart-modal">
+            <button id="cart-close-btn">&times;</button>
+            <h2>Tu Pedido</h2>
+
+            <div id="cart-items-list">
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <div class="cart-total-section">
+                Total: <span id="cart-total-price">$0.00</span>
+            </div>
+
+            <form class="cart-form">
+                <h3>Datos de Entrega</h3>
+                <div class="form-group">
+                    <label for="user-name">Tu Nombre</label>
+                    <input type="text" id="user-name" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-address">Domicilio</label>
+                    <input type="text" id="user-address" placeholder="Ej. Calle Siempre Viva 123, Col. Centro" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Forma de Pago</label>
+                    <select id="payment-method">
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Transferencia">Transferencia</option>
+                        <option value="Terminal (tarjeta)">Terminal (tarjeta)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="user-requests">Peticiones Adicionales</label>
+                    <textarea id="user-requests" rows="3" placeholder="Ej. Sin palta, salsa extra, etc."></textarea>
+                </div>
+
+                <button type="button" id="checkout-whatsapp-btn">Completar Pedido por WhatsApp</button>
+                <span id="cart-error" class="cart-error-message"></span>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
